@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "ese-6150"
+assignment: "lab-7-model-predictive-control"
+owner:
+  username: "amysen"
+  id: 30575672
+  accepted_at: "2026-10-23T16:48:29Z"
+source:
+  owner: "f1tenth"
+  owner_id: 38742763
+  repo: "f1tenth_lab7_template"
+  branch: "main"

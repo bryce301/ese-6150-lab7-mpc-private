@@ -1,0 +1,50 @@
+{
+  "environment": "Windows PowerShell",
+  "checks": [
+    {
+      "command": [
+        "wsl.exe",
+        "--status"
+      ],
+      "available": true,
+      "returncode": 50,
+      "output": "未安装适用于 Linux 的 Windows 子系统。可通过运行 “wsl.exe --install” 进行安装。\r\r\n有关详细信息，请访问 https://aka.ms/wslinstall"
+    },
+    {
+      "command": [
+        "wsl.exe",
+        "--list",
+        "--verbose"
+      ],
+      "available": true,
+      "returncode": 1,
+      "output": "未安装适用于 Linux 的 Windows 子系统。可通过运行 “wsl.exe --install” 进行安装。\r\r\n有关详细信息，请访问 https://aka.ms/wslinstall"
+    },
+    {
+      "command": [
+        "ros2",
+        "--help"
+      ],
+      "available": false,
+      "result": "Executable not found in PATH"
+    },
+    {
+      "command": [
+        "docker",
+        "version"
+      ],
+      "available": false,
+      "result": "Executable not found in PATH"
+    },
+    {
+      "command": [
+        "colcon",
+        "--help"
+      ],
+      "available": false,
+      "result": "Executable not found in PATH"
+    }
+  ],
+  "mpc_files_unchanged": true,
+  "full_ros_simulation_started": false
+}

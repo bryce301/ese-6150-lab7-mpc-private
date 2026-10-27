@@ -1,0 +1,142 @@
+[
+  {
+    "track": "levine",
+    "status": "finished",
+    "seconds": 47.0,
+    "progress_laps": 3.005,
+    "clearance": 0.283,
+    "max_error": 0.351,
+    "wall_seconds": 2.03,
+    "case": "nominal_20Hz"
+  },
+  {
+    "track": "levine",
+    "status": "finished",
+    "seconds": 47.7,
+    "progress_laps": 3.003,
+    "clearance": 0.309,
+    "max_error": 0.352,
+    "wall_seconds": 0.9,
+    "case": "nominal_10Hz"
+  },
+  {
+    "track": "levine",
+    "status": "finished",
+    "seconds": 46.41,
+    "progress_laps": 3.001,
+    "clearance": 0.262,
+    "max_error": 0.352,
+    "wall_seconds": 7.02,
+    "case": "nominal_100Hz"
+  },
+  {
+    "track": "levine",
+    "status": "finished",
+    "seconds": 47.05,
+    "progress_laps": 3.001,
+    "clearance": 0.235,
+    "max_error": 0.352,
+    "wall_seconds": 1.58,
+    "case": "low_grip"
+  },
+  {
+    "track": "levine",
+    "status": "finished",
+    "seconds": 48.05,
+    "progress_laps": 3.004,
+    "clearance": 0.314,
+    "max_error": 0.352,
+    "wall_seconds": 1.62,
+    "case": "lag_40ms"
+  },
+  {
+    "track": "levine",
+    "status": "finished",
+    "seconds": 47.0,
+    "progress_laps": 3.002,
+    "clearance": 0.282,
+    "max_error": 0.351,
+    "wall_seconds": 1.57,
+    "case": "localization_noise"
+  },
+  {
+    "track": "levine",
+    "status": "finished",
+    "seconds": 48.1,
+    "progress_laps": 3.001,
+    "clearance": 0.261,
+    "max_error": 0.352,
+    "wall_seconds": 1.67,
+    "case": "combined"
+  },
+  {
+    "track": "spielberg",
+    "status": "finished",
+    "seconds": 63.25,
+    "progress_laps": 1.0,
+    "clearance": 0.225,
+    "max_error": 0.442,
+    "wall_seconds": 3.25,
+    "case": "nominal_20Hz"
+  },
+  {
+    "track": "spielberg",
+    "status": "finished",
+    "seconds": 63.6,
+    "progress_laps": 1.001,
+    "clearance": 0.258,
+    "max_error": 0.442,
+    "wall_seconds": 1.68,
+    "case": "nominal_10Hz"
+  },
+  {
+    "track": "spielberg",
+    "status": "finished",
+    "seconds": 62.99,
+    "progress_laps": 1.0,
+    "clearance": 0.197,
+    "max_error": 0.442,
+    "wall_seconds": 14.56,
+    "case": "nominal_100Hz"
+  },
+  {
+    "track": "spielberg",
+    "status": "finished",
+    "seconds": 63.35,
+    "progress_laps": 1.0,
+    "clearance": 0.16,
+    "max_error": 0.442,
+    "wall_seconds": 3.15,
+    "case": "low_grip"
+  },
+  {
+    "track": "spielberg",
+    "status": "finished",
+    "seconds": 63.75,
+    "progress_laps": 1.0,
+    "clearance": 0.269,
+    "max_error": 0.442,
+    "wall_seconds": 3.18,
+    "case": "lag_40ms"
+  },
+  {
+    "track": "spielberg",
+    "status": "finished",
+    "seconds": 63.25,
+    "progress_laps": 1.0,
+    "clearance": 0.237,
+    "max_error": 0.442,
+    "wall_seconds": 3.26,
+    "case": "localization_noise"
+  },
+  {
+    "track": "spielberg",
+    "status": "finished",
+    "seconds": 63.9,
+    "progress_laps": 1.001,
+    "clearance": 0.207,
+    "max_error": 0.443,
+    "wall_seconds": 3.32,
+    "case": "combined"
+  }
+]

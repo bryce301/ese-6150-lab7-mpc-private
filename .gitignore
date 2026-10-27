@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.nbc
+*.nbi
+.DS_Store
+build/
+install/
+log/
+.venv/
