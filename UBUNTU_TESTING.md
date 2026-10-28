@@ -4,9 +4,12 @@ This private repository is a snapshot of the current Lab 7 project, including
 the completed Python MPC and both generated waypoint CSVs. It is separate from
 the team's Classroom repository. Pushing here is not a course submission.
 
-Full ROS simulation has not yet run. Previous results in `artifacts/` are offline
-dynamics tests; the Windows environment report explains why ROS could not start.
-The original assignment instructions remain in `README.md`.
+Full local ROS simulation was run on 2026-10-27 using an isolated RoboStack
+ROS 2 Jazzy / Python 3.12 Conda environment on Ubuntu 22.04. Both original
+track configurations passed their required laps. Subsequent speed-only Levine
+tuning is documented in [SPEED_TUNING.md](SPEED_TUNING.md). The earlier offline
+and Windows reports in `artifacts/` are historical. The original assignment
+instructions remain in `README.md`.
 
 ## Prepare Ubuntu
 

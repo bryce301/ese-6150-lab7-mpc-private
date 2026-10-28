@@ -87,12 +87,28 @@ class MPC(Node):
         #       os.path.join(get_package_share_directory('mpc'), 'waypoints', <your csv>)
         #       (ament_index_python.packages). A path like /home/you/... only exists on your laptop.
         # CSV columns: x, y, yaw [rad], v [m/s], without a header.
+        self.declare_parameter('waypoint_file', f'{track}.csv')
         self.waypoints = np.loadtxt(
-            os.path.join(get_package_share_directory('mpc'), 'waypoints', f'{track}.csv'),
+            os.path.join(get_package_share_directory('mpc'), 'waypoints',
+                         self.get_parameter('waypoint_file').value),
             delimiter=','
         )
 
         self.config = mpc_config()
+        # Track launches can raise reference speeds without changing path geometry.
+        self.declare_parameter('max_speed', self.config.MAX_SPEED)
+        self.declare_parameter('max_accel', self.config.MAX_ACCEL)
+        self.declare_parameter('reference_speed_scale', 1.0)
+        self.config.MAX_SPEED = float(self.get_parameter('max_speed').value)
+        self.config.MAX_ACCEL = float(self.get_parameter('max_accel').value)
+        speed_scale = float(self.get_parameter('reference_speed_scale').value)
+        if not (math.isfinite(self.config.MAX_SPEED) and self.config.MAX_SPEED > 0.0
+                and math.isfinite(self.config.MAX_ACCEL) and self.config.MAX_ACCEL > 0.0
+                and math.isfinite(speed_scale) and speed_scale > 0.0):
+            raise ValueError('speed, acceleration and scale must be finite and positive')
+        self.waypoints[:, 3] = np.minimum(
+            self.waypoints[:, 3] * speed_scale, self.config.MAX_SPEED
+        )
         self.odelta_v = None
         self.odelta = None
         self.oa = None

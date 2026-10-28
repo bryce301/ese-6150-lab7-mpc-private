@@ -1,0 +1,336 @@
+{
+  "date": "2026-10-27",
+  "geometry_unchanged": true,
+  "identical_pose_rows": 1250,
+  "selected": {
+    "waypoint_file": "levine_fast.csv",
+    "max_speed": 10.0,
+    "max_accel": 8.0,
+    "reference_lateral_accel": 9.0,
+    "reference_accel": 4.0,
+    "reference_brake": 5.0
+  },
+  "runs": [
+    {
+      "track": "levine",
+      "status": "passed",
+      "target_laps": 3,
+      "completed_laps": 3,
+      "lap_times_seconds": [
+        14.09,
+        14.09,
+        14.08
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 11755,
+      "scan_messages": 11755,
+      "drive_messages": 11155,
+      "max_speed_mps": 5.997676229543093,
+      "max_commanded_steering_rad": 0.18047159910202026,
+      "control_wall_seconds": 47.23579708699998,
+      "run": "levine-pinned",
+      "sampled_footprint_clearance_m": 0.2611073036968211,
+      "max_reference_distance_m": 0.3541738129948969,
+      "median_reference_distance_m": 0.05273344921001692,
+      "min_measured_speed_after_lap1_mps": 2.801315361858849
+    },
+    {
+      "track": "levine",
+      "status": "passed",
+      "target_laps": 3,
+      "reference_speed_scale": 1.2,
+      "max_speed_parameter": 7.2,
+      "completed_laps": 3,
+      "lap_times_seconds": [
+        12.3,
+        12.22,
+        12.23
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 10365,
+      "scan_messages": 10365,
+      "drive_messages": 10248,
+      "max_speed_mps": 7.143137661413858,
+      "max_commanded_steering_rad": 0.17494893074035645,
+      "control_wall_seconds": 41.65572063399998,
+      "run": "speed-1.20",
+      "sampled_footprint_clearance_m": 0.20517070738587823,
+      "max_reference_distance_m": 0.35432377311919966,
+      "median_reference_distance_m": 0.057992122052135914,
+      "min_measured_speed_after_lap1_mps": 3.395634236623231
+    },
+    {
+      "track": "levine",
+      "status": "passed",
+      "target_laps": 3,
+      "reference_speed_scale": 1.4,
+      "max_speed_parameter": 8.4,
+      "completed_laps": 3,
+      "lap_times_seconds": [
+        11.07,
+        10.94,
+        10.94
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 9402,
+      "scan_messages": 9402,
+      "drive_messages": 8801,
+      "max_speed_mps": 7.89097809096844,
+      "max_commanded_steering_rad": 0.18389678001403809,
+      "control_wall_seconds": 37.795344002999855,
+      "run": "speed-1.40-clean",
+      "sampled_footprint_clearance_m": 0.11163268277064194,
+      "max_reference_distance_m": 0.36408528222221914,
+      "median_reference_distance_m": 0.05944412519286629,
+      "min_measured_speed_after_lap1_mps": 4.030828946954843
+    },
+    {
+      "track": "levine",
+      "status": "collision",
+      "target_laps": 3,
+      "reference_speed_scale": 1.6,
+      "max_speed_parameter": 9.6,
+      "completed_laps": 0,
+      "lap_times_seconds": [],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 1,
+      "odometry_messages": 1065,
+      "scan_messages": 1066,
+      "drive_messages": 961,
+      "max_speed_mps": 5.447522198739678,
+      "max_commanded_steering_rad": 0.3470361530780792,
+      "control_wall_seconds": 4.454380366000123,
+      "run": "speed-1.60",
+      "sampled_footprint_clearance_m": -0.01506067555898738,
+      "max_reference_distance_m": 0.5909846355191554,
+      "median_reference_distance_m": 0.31487943973159377,
+      "min_measured_speed_after_lap1_mps": null
+    },
+    {
+      "track": "levine",
+      "status": "passed",
+      "target_laps": 3,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 10.0,
+      "max_accel_parameter": 4.0,
+      "waypoint_file": "candidates/levine-v10-lat8.5-a4.csv",
+      "completed_laps": 3,
+      "lap_times_seconds": [
+        11.65,
+        11.61,
+        11.61
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 9746,
+      "scan_messages": 9747,
+      "drive_messages": 9644,
+      "max_speed_mps": 8.18746657278018,
+      "max_commanded_steering_rad": 0.17943182587623596,
+      "control_wall_seconds": 39.1850919389999,
+      "run": "profile-v10-lat8.5-a4",
+      "sampled_footprint_clearance_m": 0.21005022242692378,
+      "max_reference_distance_m": 0.3538493145812324,
+      "median_reference_distance_m": 0.07748828636913128,
+      "min_measured_speed_after_lap1_mps": 3.296065848029469
+    },
+    {
+      "track": "levine",
+      "status": "passed",
+      "target_laps": 3,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 10.0,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/levine-v10-lat9-a4-b5.csv",
+      "completed_laps": 3,
+      "lap_times_seconds": [
+        10.33,
+        10.32,
+        10.32
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 8510,
+      "scan_messages": 8511,
+      "drive_messages": 8408,
+      "max_speed_mps": 9.761032685699579,
+      "max_commanded_steering_rad": 0.15793122351169586,
+      "control_wall_seconds": 34.236968311000055,
+      "run": "profile-v10-lat9-a8",
+      "sampled_footprint_clearance_m": 0.1569012716821877,
+      "max_reference_distance_m": 0.3534018903160905,
+      "median_reference_distance_m": 0.12121959164051702,
+      "min_measured_speed_after_lap1_mps": 3.391769069977068
+    },
+    {
+      "track": "levine",
+      "status": "passed",
+      "target_laps": 10,
+      "reference_speed_scale": null,
+      "max_speed_parameter": null,
+      "max_accel_parameter": null,
+      "waypoint_file": null,
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 10,
+      "lap_times_seconds": [
+        10.33,
+        10.32,
+        10.32,
+        10.32,
+        10.32,
+        10.32,
+        10.32,
+        10.32,
+        10.32,
+        10.32
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 26523,
+      "scan_messages": 26522,
+      "drive_messages": 26460,
+      "max_speed_mps": 9.761049087891086,
+      "max_commanded_steering_rad": 0.15793916583061218,
+      "control_wall_seconds": 106.63754454900004,
+      "run": "fast-launch-10laps",
+      "sampled_footprint_clearance_m": 0.15708448972077377,
+      "max_reference_distance_m": 0.35348483524634655,
+      "median_reference_distance_m": 0.1205690278803922,
+      "min_measured_speed_after_lap1_mps": 3.39181340645555
+    },
+    {
+      "track": "levine",
+      "status": "passed",
+      "target_laps": 3,
+      "reference_speed_scale": null,
+      "max_speed_parameter": null,
+      "max_accel_parameter": null,
+      "waypoint_file": null,
+      "start_y_offset": 0.1,
+      "start_yaw_offset": 0.05,
+      "completed_laps": 3,
+      "lap_times_seconds": [
+        10.33,
+        10.32,
+        10.32
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 8541,
+      "scan_messages": 8541,
+      "drive_messages": 8408,
+      "max_speed_mps": 9.761041343843278,
+      "max_commanded_steering_rad": 0.1579257994890213,
+      "control_wall_seconds": 34.37627013699989,
+      "run": "fast-offset-left",
+      "sampled_footprint_clearance_m": 0.15768947530061184,
+      "max_reference_distance_m": 0.4649819146899792,
+      "median_reference_distance_m": 0.1219356466601717,
+      "min_measured_speed_after_lap1_mps": 3.3948642104491307
+    },
+    {
+      "track": "levine",
+      "status": "passed",
+      "target_laps": 3,
+      "reference_speed_scale": null,
+      "max_speed_parameter": null,
+      "max_accel_parameter": null,
+      "waypoint_file": null,
+      "start_y_offset": -0.1,
+      "start_yaw_offset": -0.05,
+      "completed_laps": 3,
+      "lap_times_seconds": [
+        10.33,
+        10.32,
+        10.32
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 8536,
+      "scan_messages": 8537,
+      "drive_messages": 8180,
+      "max_speed_mps": 9.761027461060397,
+      "max_commanded_steering_rad": 0.1579214185476303,
+      "control_wall_seconds": 34.36507136299997,
+      "run": "fast-offset-right",
+      "sampled_footprint_clearance_m": 0.15684638859010563,
+      "max_reference_distance_m": 0.33651317267688136,
+      "median_reference_distance_m": 0.12006992242520981,
+      "min_measured_speed_after_lap1_mps": 3.3917869221510935
+    },
+    {
+      "track": "spielberg",
+      "status": "passed",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": null,
+      "max_accel_parameter": null,
+      "waypoint_file": null,
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 1,
+      "lap_times_seconds": [
+        58.27
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 15890,
+      "scan_messages": 15889,
+      "drive_messages": 15759,
+      "max_speed_mps": 6.000115303596355,
+      "max_commanded_steering_rad": 0.1576010137796402,
+      "control_wall_seconds": 63.76557849000005,
+      "run": "spielberg-speed-regression"
+    }
+  ],
+  "local_pose_checks": {
+    "results": {
+      "left": {
+        "steering": -0.0784769949497432,
+        "speed": 2.800004604630482
+      },
+      "right": {
+        "steering": 0.05767067476768256,
+        "speed": 2.799980310103669
+      },
+      "yaw_left": {
+        "steering": -0.2856007878225237,
+        "speed": 2.800019438513252
+      },
+      "yaw_right": {
+        "steering": 0.26147017512420795,
+        "speed": 2.800008972634433
+      },
+      "straight": {
+        "steering": -0.010107440281534229,
+        "speed": 2.8000032639244044
+      },
+      "corner": {
+        "steering": 0.19276544433966497,
+        "speed": 2.8
+      },
+      "standing": {
+        "steering": -0.0005592573304139237,
+        "speed": 0.8000131165700082
+      },
+      "large_yaw": {
+        "steering": -0.4188466411991497,
+        "speed": 2.799999975553502
+      }
+    },
+    "checks": {
+      "lateral": true,
+      "heading": true,
+      "corner": true,
+      "standing": true,
+      "large_yaw": true
+    },
+    "passed": true,
+    "note": "Local analogues, not the official course autograder"
+  },
+  "limitations": "Local nominal-friction simulator and initial-pose tests only; sampled clearance is an estimate, not a guarantee for noise, latency, or real hardware."
+}

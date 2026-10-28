@@ -1,7 +1,9 @@
 # MPC reference paths
 
-The node loads `levine.csv` or `spielberg.csv` using the launch file's `track`
-parameter. Each file has four comma-separated columns, without a header:
+The node defaults to `<track>.csv`; the `waypoint_file` parameter can select
+another installed CSV. The launches now select `levine_fast.csv` and
+`spielberg_fast.csv`. The original CSVs remain available. Each file has four comma-separated
+columns, without a header:
 
 ```text
 x [m], y [m], yaw [rad], reference speed [m/s]
@@ -16,9 +18,11 @@ as required by the template's reference interpolation.
 | Track | Points | Length | Reference speed | Peak geometric steering |
 | --- | ---: | ---: | ---: | ---: |
 | Levine | 1,250 | 62.45 m | 2.78-6.00 m/s | 0.271 rad |
+| Levine fast (same poses) | 1,250 | 62.45 m | 3.45-11.00 m/s | 0.271 rad |
 | Spielberg | 6,800 | 339.96 m | 3.45-6.00 m/s | 0.179 rad |
+| Spielberg fast (revised path) | 6,845 | 342.22 m | 3.33-10.00 m/s | 0.248 rad |
 
-## Path and speed construction
+## Original path and speed construction
 
 Levine starts from the supplied centerline. Spielberg starts from the supplied
 raceline, whose geometry is smoother than its centerline at the tight corners.
@@ -65,6 +69,12 @@ run by the ROS node or the launch files; the generated CSVs are installed by
 the existing `CMakeLists.txt`.
 
 ## Validation and limits
+
+The offline results below apply to the original paths/speeds. Full ROS tests
+and the new speed-only Levine profile are documented in
+[`SPEED_TUNING.md`](../../SPEED_TUNING.md).
+The revised Spielberg geometry and full ROS results are documented in
+[`SPIELBERG_TUNING.md`](../../SPIELBERG_TUNING.md).
 
 The saved CSVs were checked for uniform spacing, valid headings, closure,
 steering feasibility, and lateral/longitudinal acceleration limits. Actual

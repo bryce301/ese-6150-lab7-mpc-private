@@ -17,7 +17,12 @@ EXECUTABLE = 'mpc_node.py'
 # `track` tells the skeleton which waypoints to load; add this track's values
 # for the other parameters your node declares, e.g. 'max_speed': 6.0, or give
 # it a full .yaml config file
-PARAMETERS = {'track': 'spielberg'}
+PARAMETERS = {
+    'track': 'spielberg',
+    'waypoint_file': 'spielberg_fast.csv',
+    'max_speed': 11.0,
+    'max_accel': 8.0,
+}
 
 
 def generate_launch_description():

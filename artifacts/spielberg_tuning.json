@@ -1,0 +1,623 @@
+{
+  "date": "2026-10-27",
+  "controller": "same mpc_node.py for both tracks",
+  "weights_changed": false,
+  "max_speed": 11.0,
+  "max_accel": 8.0,
+  "path_margin_m": 1.0,
+  "reference_max_speed_mps": 10.0,
+  "reference_lateral_accel_mps2": 8.5,
+  "reference_accel_mps2": 4.0,
+  "reference_brake_mps2": 5.0,
+  "screenshot_teams": [
+    {
+      "team": 5,
+      "lap_seconds": 39.15,
+      "mean_mps": 8.22,
+      "top_mps": 10.87
+    },
+    {
+      "team": 6,
+      "lap_seconds": 39.38,
+      "mean_mps": 8.15,
+      "top_mps": 10.0
+    }
+  ],
+  "runs": [
+    {
+      "run": "spielberg-speed-regression",
+      "track": "spielberg",
+      "status": "passed",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": null,
+      "max_accel_parameter": null,
+      "waypoint_file": null,
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 1,
+      "lap_times_seconds": [
+        58.27
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 15890,
+      "scan_messages": 15889,
+      "drive_messages": 15759,
+      "max_speed_mps": 6.000115303596355,
+      "max_commanded_steering_rad": 0.1576010137796402,
+      "control_wall_seconds": 63.76557849000005,
+      "sampled_footprint_clearance_m": 0.2017241495489204,
+      "max_reference_distance_m": 0.4464651351462025,
+      "median_reference_distance_m": 0.028283480636582453,
+      "min_measured_speed_after_lap1_mps": 5.999982346983882
+    },
+    {
+      "run": "spielberg-v9.5-lat8.5",
+      "track": "spielberg",
+      "status": "collision",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 9.5,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/spielberg-v9.5-lat8.5-a4-b5.csv",
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 0,
+      "lap_times_seconds": [],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 1,
+      "odometry_messages": 6079,
+      "scan_messages": 6079,
+      "drive_messages": 5980,
+      "max_speed_mps": 9.500048129427604,
+      "max_commanded_steering_rad": 0.2857118248939514,
+      "control_wall_seconds": 24.534359700000095,
+      "sampled_footprint_clearance_m": -0.005664647623049017,
+      "max_reference_distance_m": 0.4806651525428489,
+      "median_reference_distance_m": 0.04491553249087028,
+      "min_measured_speed_after_lap1_mps": null
+    },
+    {
+      "run": "spielberg-v10-lat9",
+      "track": "spielberg",
+      "status": "collision",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 10.0,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/spielberg-v10-lat9-a4-b5.csv",
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 0,
+      "lap_times_seconds": [],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 1,
+      "odometry_messages": 6148,
+      "scan_messages": 6149,
+      "drive_messages": 5831,
+      "max_speed_mps": 10.000052904138348,
+      "max_commanded_steering_rad": 0.3683607280254364,
+      "control_wall_seconds": 24.589175733000047,
+      "sampled_footprint_clearance_m": -0.004837230955961523,
+      "max_reference_distance_m": 0.5650027822544965,
+      "median_reference_distance_m": 0.055284494905011285,
+      "min_measured_speed_after_lap1_mps": null
+    },
+    {
+      "run": "spielberg-v10-lat6.5",
+      "track": "spielberg",
+      "status": "collision",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 10.0,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/spielberg-v10-lat6.5-a4-b5.csv",
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 0,
+      "lap_times_seconds": [],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 1,
+      "odometry_messages": 7415,
+      "scan_messages": 7416,
+      "drive_messages": 7360,
+      "max_speed_mps": 10.000048768888165,
+      "max_commanded_steering_rad": 0.3924480676651001,
+      "control_wall_seconds": 30.114729434000083
+    },
+    {
+      "run": "spielberg-v10-lat7",
+      "track": "spielberg",
+      "status": "collision",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 10.0,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/spielberg-v10-lat7-a4-b4.csv",
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 0,
+      "lap_times_seconds": [],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 1,
+      "odometry_messages": 7538,
+      "scan_messages": 7538,
+      "drive_messages": 7308,
+      "max_speed_mps": 10.000042974223177,
+      "max_commanded_steering_rad": 0.36571311950683594,
+      "control_wall_seconds": 30.36539384000025
+    },
+    {
+      "run": "spielberg-v11-lat5.5",
+      "track": "spielberg",
+      "status": "collision",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 11.0,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/spielberg-v11-lat5.5-a4-b5.csv",
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 0,
+      "lap_times_seconds": [],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 1,
+      "odometry_messages": 608,
+      "scan_messages": 609,
+      "drive_messages": 510,
+      "max_speed_mps": 7.626164730145354,
+      "max_commanded_steering_rad": 0.4188883602619171,
+      "control_wall_seconds": 2.6450863640002353
+    },
+    {
+      "run": "spielberg-v12-lat4.5",
+      "track": "spielberg",
+      "status": "collision",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 12.0,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/spielberg-v12-lat4.5-a4-b4.csv",
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 0,
+      "lap_times_seconds": [],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 1,
+      "odometry_messages": 619,
+      "scan_messages": 619,
+      "drive_messages": 462,
+      "max_speed_mps": 4.416145409938283,
+      "max_commanded_steering_rad": 0.4189000129699707,
+      "control_wall_seconds": 2.4700550359998488
+    },
+    {
+      "run": "spielberg-zones-lat6.5",
+      "track": "spielberg",
+      "status": "collision",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 11.0,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/spielberg-zones-lat6.5.csv",
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 0,
+      "lap_times_seconds": [],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 1,
+      "odometry_messages": 8330,
+      "scan_messages": 8331,
+      "drive_messages": 8232,
+      "max_speed_mps": 10.999967707738282,
+      "max_commanded_steering_rad": 0.20490790903568268,
+      "control_wall_seconds": 33.55617817600023
+    },
+    {
+      "run": "spielberg-zones-lat5.5",
+      "track": "spielberg",
+      "status": "collision",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 11.0,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/spielberg-zones-lat5.5.csv",
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 0,
+      "lap_times_seconds": [],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 1,
+      "odometry_messages": 8864,
+      "scan_messages": 8865,
+      "drive_messages": 8547,
+      "max_speed_mps": 10.99996679879127,
+      "max_commanded_steering_rad": 0.15871579945087433,
+      "control_wall_seconds": 35.6941809609998
+    },
+    {
+      "run": "spielberg-margin0.95-v10",
+      "track": "spielberg",
+      "status": "passed",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 11.0,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/spielberg-margin0.95-v10.csv",
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 1,
+      "lap_times_seconds": [
+        39.77
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 10787,
+      "scan_messages": 10787,
+      "drive_messages": 10689,
+      "max_speed_mps": 10.04370814394776,
+      "max_commanded_steering_rad": 0.3379487693309784,
+      "control_wall_seconds": 43.37682800700031,
+      "sampled_footprint_clearance_m": 0.030377204416323855,
+      "max_reference_distance_m": 0.7598892537332763,
+      "median_reference_distance_m": 0.07198028115054049,
+      "min_measured_speed_after_lap1_mps": 9.99985075765895
+    },
+    {
+      "run": "spielberg-margin1.0-v10",
+      "track": "spielberg",
+      "status": "passed",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 11.0,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/spielberg-margin1.0-v10.csv",
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 1,
+      "lap_times_seconds": [
+        40.11
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 10874,
+      "scan_messages": 10874,
+      "drive_messages": 10774,
+      "max_speed_mps": 10.031743952278351,
+      "max_commanded_steering_rad": 0.33151671290397644,
+      "control_wall_seconds": 43.71656631499991,
+      "sampled_footprint_clearance_m": 0.1248611642834753,
+      "max_reference_distance_m": 0.6874252516951748,
+      "median_reference_distance_m": 0.07870888820419528,
+      "min_measured_speed_after_lap1_mps": 9.999831679123092
+    },
+    {
+      "run": "spielberg-selected-3laps",
+      "track": "spielberg",
+      "status": "passed",
+      "target_laps": 3,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 11.0,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/spielberg-margin1.0-v10.csv",
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 3,
+      "lap_times_seconds": [
+        40.11,
+        40.1,
+        40.1
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 30918,
+      "scan_messages": 30919,
+      "drive_messages": 30821,
+      "max_speed_mps": 10.031795472403852,
+      "max_commanded_steering_rad": 0.3336533010005951,
+      "control_wall_seconds": 123.90436629299984,
+      "sampled_footprint_clearance_m": 0.11851196582686616,
+      "max_reference_distance_m": 0.6875369343709822,
+      "median_reference_distance_m": 0.06996927464784851,
+      "min_measured_speed_after_lap1_mps": 3.327481565081705
+    },
+    {
+      "run": "spielberg-selected-left",
+      "track": "spielberg",
+      "status": "passed",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 11.0,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/spielberg-margin1.0-v10.csv",
+      "start_y_offset": 0.1,
+      "start_yaw_offset": 0.05,
+      "completed_laps": 1,
+      "lap_times_seconds": [
+        40.1
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 10874,
+      "scan_messages": 10874,
+      "drive_messages": 10773,
+      "max_speed_mps": 10.031706014422817,
+      "max_commanded_steering_rad": 0.33536046743392944,
+      "control_wall_seconds": 43.7165651119999,
+      "sampled_footprint_clearance_m": 0.1281829450659706,
+      "max_reference_distance_m": 0.6872360240069694,
+      "median_reference_distance_m": 0.0850763066584532,
+      "min_measured_speed_after_lap1_mps": 9.996789573711963
+    },
+    {
+      "run": "spielberg-selected-right",
+      "track": "spielberg",
+      "status": "passed",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": 11.0,
+      "max_accel_parameter": 8.0,
+      "waypoint_file": "candidates/spielberg-margin1.0-v10.csv",
+      "start_y_offset": -0.1,
+      "start_yaw_offset": -0.05,
+      "completed_laps": 1,
+      "lap_times_seconds": [
+        40.1
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 10871,
+      "scan_messages": 10872,
+      "drive_messages": 10769,
+      "max_speed_mps": 10.031720684210843,
+      "max_commanded_steering_rad": 0.3515486717224121,
+      "control_wall_seconds": 43.70496250999986,
+      "sampled_footprint_clearance_m": 0.11677828359417394,
+      "max_reference_distance_m": 0.6871510346414663,
+      "median_reference_distance_m": 0.06868092268816914,
+      "min_measured_speed_after_lap1_mps": 9.996056504966667
+    },
+    {
+      "run": "spielberg-final-launch",
+      "track": "spielberg",
+      "status": "passed",
+      "target_laps": 1,
+      "reference_speed_scale": null,
+      "max_speed_parameter": null,
+      "max_accel_parameter": null,
+      "waypoint_file": null,
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 1,
+      "lap_times_seconds": [
+        40.11
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 10904,
+      "scan_messages": 10904,
+      "drive_messages": 10774,
+      "max_speed_mps": 10.031743939340922,
+      "max_commanded_steering_rad": 0.33151671290397644,
+      "control_wall_seconds": 43.83613109800035,
+      "sampled_footprint_clearance_m": 0.11379569340995851,
+      "max_reference_distance_m": 0.6872136343820138,
+      "median_reference_distance_m": 0.07900338375907849,
+      "min_measured_speed_after_lap1_mps": 9.999842296965493
+    },
+    {
+      "run": "levine-after-spielberg",
+      "track": "levine",
+      "status": "passed",
+      "target_laps": 3,
+      "reference_speed_scale": null,
+      "max_speed_parameter": null,
+      "max_accel_parameter": null,
+      "waypoint_file": null,
+      "start_y_offset": 0.0,
+      "start_yaw_offset": 0.0,
+      "completed_laps": 3,
+      "lap_times_seconds": [
+        9.65,
+        9.64,
+        9.63
+      ],
+      "lap_time_source": "simulator completed-lap log (0.01 s precision)",
+      "collision_messages_true": 0,
+      "odometry_messages": 8031,
+      "scan_messages": 8031,
+      "drive_messages": 7897,
+      "max_speed_mps": 10.552783383054852,
+      "max_commanded_steering_rad": 0.14853982627391815,
+      "control_wall_seconds": 32.33565110000018
+    }
+  ],
+  "limitations": "Local ROS simulator only; footprint clearance is sampled, not a continuous guarantee. No course submission or real-car test.",
+  "shared_controller_verification": {
+    "passed": true,
+    "controller": "/home/bryce/.local/share/lab7-ros/install/mpc/lib/mpc/mpc_node.py",
+    "weights_equal_to_original": true,
+    "configs": {
+      "levine": {
+        "NXK": 4,
+        "NU": 2,
+        "TK": 8,
+        "DTK": 0.1,
+        "WB": 0.33,
+        "MAX_SPEED": 11.0,
+        "MIN_SPEED": 0.0,
+        "MAX_ACCEL": 8.0,
+        "MAX_STEER": 0.4189,
+        "MAX_DSTEER": 3.141592653589793,
+        "Qk": [
+          [
+            13.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            13.5,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            5.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            13.0
+          ]
+        ],
+        "Qfk": [
+          [
+            13.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            13.5,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            5.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            13.0
+          ]
+        ],
+        "Rk": [
+          [
+            0.01,
+            0.0
+          ],
+          [
+            0.0,
+            100.0
+          ]
+        ],
+        "Rdk": [
+          [
+            0.01,
+            0.0
+          ],
+          [
+            0.0,
+            100.0
+          ]
+        ]
+      },
+      "spielberg": {
+        "NXK": 4,
+        "NU": 2,
+        "TK": 8,
+        "DTK": 0.1,
+        "WB": 0.33,
+        "MAX_SPEED": 11.0,
+        "MIN_SPEED": 0.0,
+        "MAX_ACCEL": 8.0,
+        "MAX_STEER": 0.4189,
+        "MAX_DSTEER": 3.141592653589793,
+        "Qk": [
+          [
+            13.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            13.5,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            5.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            13.0
+          ]
+        ],
+        "Qfk": [
+          [
+            13.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            13.5,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            5.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            13.0
+          ]
+        ],
+        "Rk": [
+          [
+            0.01,
+            0.0
+          ],
+          [
+            0.0,
+            100.0
+          ]
+        ],
+        "Rdk": [
+          [
+            0.01,
+            0.0
+          ],
+          [
+            0.0,
+            100.0
+          ]
+        ]
+      }
+    }
+  },
+  "profile_checks": {
+    "passed": true,
+    "point_count": 6845,
+    "length_m": 342.21825855678156,
+    "max_lateral_accel_mps2": 8.500825908070539,
+    "lateral_quantization_tolerance": 0.001,
+    "min_longitudinal_accel_mps2": -5.000002121246051,
+    "max_longitudinal_accel_mps2": 4.000002362362832,
+    "max_geometric_steering_rad": 0.24828854087796406
+  },
+  "sampled_second_lap_mean_body_speed_mps": 8.571397816577345
+}
